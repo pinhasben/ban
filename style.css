@@ -1,0 +1,19 @@
+@keyframes wave {
+    0% { transform: rotate(0deg) translateY(0px); }
+    25% { transform: rotate(1deg) translateY(3px); }
+    50% { transform: rotate(0deg) translateY(0px); }
+    75% { transform: rotate(-1deg) translateY(-3px); }
+    100% { transform: rotate(0deg) translateY(0px); }
+}
+
+.banner {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(270deg, red, darkred);
+    animation: wave 0.5s infinite ease-in-out;
+    font-family: Arial, sans-serif;
+}
