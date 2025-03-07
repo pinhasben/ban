@@ -1,19 +1,22 @@
-@keyframes wave {
-    0% { transform: rotate(0deg) translateY(0px); }
-    25% { transform: rotate(1deg) translateY(3px); }
-    50% { transform: rotate(0deg) translateY(0px); }
-    75% { transform: rotate(-1deg) translateY(-3px); }
-    100% { transform: rotate(0deg) translateY(0px); }
+@keyframes waveEffect {
+    0% { transform: translateY(0px) scaleX(1); }
+    50% { transform: translateY(-8px) scaleX(1.02); }
+    100% { transform: translateY(0px) scaleX(1); }
 }
 
 .banner {
     width: 100%;
     padding: 20px;
     text-align: center;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
-    background: linear-gradient(270deg, red, darkred);
-    animation: wave 0.5s infinite ease-in-out;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #d32f2f, #b71c1c);
+    animation: waveEffect 3s infinite ease-in-out;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
